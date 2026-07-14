@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './common/Button';
+import profilePic from '../assets/profile.jpeg';
 
 export const Hero = () => {
   return (
@@ -35,34 +36,7 @@ export const Hero = () => {
         </div>
 
         <div className="hero-avatar-container">
-          {/* Reemplazar por foto de perfil real */}
-          {/* PLACEHOLDER: Foto de perfil de Matías (Paso 1: Colocar la imagen en src/assets/profile.jpg o profile.webp. Paso 2: Importar la imagen aquí y reemplazar este bloque por <img src={profilePic} alt="Matías Ocampo" className="avatar-img" />) */}
-          <div className="avatar-placeholder" aria-hidden="true">
-            <div className="avatar-placeholder-text">
-              <span
-                style={{
-                  color: 'var(--accent)',
-                  fontWeight: 'bold',
-                  display: 'block',
-                  marginBottom: '0.4rem',
-                }}
-              >
-                [ AVATAR ]
-              </span>
-              Colocar foto de perfil real en:
-              <br />
-              <code
-                style={{
-                  fontSize: '0.7rem',
-                  display: 'block',
-                  marginTop: '0.4rem',
-                  color: 'var(--accent)',
-                }}
-              >
-                src/assets/profile.jpg
-              </code>
-            </div>
-          </div>
+          <img src={profilePic} alt="Matías Ocampo" className="avatar-img" />
         </div>
       </div>
     </header>

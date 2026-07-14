@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tag } from './common/Tag';
+import dashboardScreenshot from '../assets/flawsfind-dashboard.jpeg';
 
 export const FeaturedProject = ({ project }) => {
   const { title, badge, description, tags, links } = project;
@@ -99,25 +100,13 @@ Reporte Dual ──┬──> Vista no técnica (Lenguaje claro)
         */}
       </div>
 
-      {/* Placeholders de capturas y mockups para reemplazo futuro */}
-      {/* PLACEHOLDER: Captura del Dashboard de FlawsFind (reemplazar por src/assets/flawsfind-dashboard.png) */}
-      <div className="screenshot-placeholder" aria-hidden="true">
-        <div className="screenshot-placeholder-text">
-          <span
-            style={{
-              color: 'var(--accent)',
-              fontWeight: 'bold',
-              display: 'block',
-              marginBottom: '0.4rem',
-            }}
-          >
-            [ CAPTURA DE PANTALLA FLAWSFIND ]
-          </span>
-          Espacio reservado para screenshots de la interfaz de usuario.
-          <br />
-          Para colocar una imagen, guárdela en <code>src/assets/flawsfind-dashboard.png</code> y
-          reemplace este bloque por la etiqueta <code>&lt;img&gt;</code> correspondiente.
-        </div>
+      {/* Captura de pantalla real de FlawsFind */}
+      <div className="featured-project-screenshot-container">
+        <img
+          src={dashboardScreenshot}
+          alt="Dashboard de FlawsFind"
+          className="featured-project-screenshot"
+        />
       </div>
     </article>
   );
